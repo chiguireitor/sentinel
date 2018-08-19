@@ -44,7 +44,7 @@ Make sure the local glyno daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/chiguireitor/glyno-sentinel.git && cd glyno-sentinel
+    $ git clone https://github.com/chiguireitor/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -124,7 +124,7 @@ Run:
 
 Add the following line below to the end of the file:
 
-    * * * * * cd /home/YOURUSERNAME/.glyno/glyno-sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
+    * * * * * cd /home/YOURUSERNAME/.glyno/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
     
 
 Make sure you:
